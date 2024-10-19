@@ -1,5 +1,5 @@
 import { Menu, Package2, Search } from "lucide-react";
-
+import { Image } from "@chakra-ui/react";
 import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
@@ -20,25 +20,26 @@ export const RootLayout = () => {
     <div className="flex min-h-screen w-full flex-col">
       <header className="container sticky top-0 flex h-16 items-center gap-4 border-b bg-background px-4 md:px-6">
         <nav className="hidden flex-col gap-6 text-lg font-medium md:flex md:flex-row md:items-center md:gap-5 md:text-sm lg:gap-6">
-          <Link
-            className="flex items-center gap-2 text-lg font-semibold md:text-base"
-            to={""}
-          >
-            <Package2 className="h-6 w-6" />
-            <span className="sr-only">Acme Inc</span>
-          </Link>
+        
+            <Image
+            src="https://amethyst-total-vicuna-396.mypinata.cloud/ipfs/QmRALA5qvQBRwWre8ofuhCbr3wxVmPS3kGetRR9uJqbqqe"
+            alt="Avalanche Summit LATAM"
+            width={50}
+            height={50}
+          />
+          
           <Link
             className="text-foreground transition-colors hover:text-foreground"
             to={""}
           >
             Home
           </Link>
-          <Link
+          {/* <Link
             className="text-muted-foreground transition-colors hover:text-foreground"
             to={""}
           >
             About
-          </Link>
+          </Link> */}
           {/* <Link
             className="text-muted-foreground transition-colors hover:text-foreground"
             to={""}
@@ -75,7 +76,7 @@ export const RootLayout = () => {
               <Link className="hover:text-foreground" to={""}>
                 Home
               </Link>
-              <Link
+              {/* <Link
                 className="text-muted-foreground hover:text-foreground"
                 to={""}
               >
@@ -92,7 +93,7 @@ export const RootLayout = () => {
                 to={""}
               >
                 Profile
-              </Link>
+              </Link> */}
             </nav>
           </SheetContent>
         </Sheet>
