@@ -1,14 +1,14 @@
 import { createConfig, http, WagmiProvider } from "wagmi";
-import { sepolia } from "wagmi/chains";
+import { avalancheFuji } from "wagmi/chains";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { ConnectKitProvider, getDefaultConfig } from "connectkit";
 
 const config = createConfig(
   getDefaultConfig({
     // Your dApps chains
-    chains: [sepolia],
+    chains: [avalancheFuji],
     transports: {
-      [sepolia.id]: http(import.meta.env.VITE_SEPOLIA_URL),
+      [avalancheFuji.id]: http(import.meta.env.VITE_FUJI_URL),
     },
 
     // Required API Keys

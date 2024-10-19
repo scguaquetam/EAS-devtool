@@ -68,14 +68,14 @@ export const HomeScreen = () => {
     <div>
       <div className="flex items-center justify-between">
         <p className="text-lg font-semibold">Welcome Back!!</p>
-        <EasCreateSchema network='sepolia'
+        {/* <EasCreateSchema network='fuji'
           signer={signer!}
           onSchemaCreated={(schemaId) => {
             console.log('Schema created:', schemaId);
             // navigate to the schema details page
             navigate(`/schema/view/${schemaId}`)
           }}
-        />
+        /> */}
       </div>
 
       <div className="grid grid-cols-3 gap-10 mt-4 mb-4">

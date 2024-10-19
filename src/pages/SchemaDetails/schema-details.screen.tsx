@@ -106,7 +106,7 @@ export const SchemaDetailScreen = () => {
           </dt>
           <dd className="pb-3 pt-1 text-zinc-950 sm:border-t sm:border-zinc-950/5 sm:py-3 dark:text-white dark:sm:border-white/5 sm:[&:nth-child(2)]:border-none">
             <a
-              href={`https://sepolia.etherscan.io/tx/${schema?.txid}`}
+              href={`https://testnet.snowtrace.io/tx/${schema?.txid}`}
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue-600 hover:underline"
@@ -149,11 +149,11 @@ export const SchemaDetailScreen = () => {
         </dl>
       </div>
 
-      <div>
+      {/* <div>
         <EasAttest 
         text="Attest this Schema"
         schemaId={schemaId!}
-        network="sepolia"
+        network="fuji"
         signer={signer!}
         buttonProps={{
           width: "full"
@@ -163,7 +163,7 @@ export const SchemaDetailScreen = () => {
           navigate(`/attestation/view/${attestation.attestationUid}`);
         }}
          />
-      </div>
+      </div> */}
 
       <h2 className="text-base/7 font-semibold text-zinc-950 sm:text-sm/6 dark:text-white">
         All Attestations to this Schema
